@@ -1,0 +1,2 @@
+*.{aux,blg,log,tex.bbl,gz}
+*.pdf
