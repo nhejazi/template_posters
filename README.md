@@ -30,8 +30,8 @@ distribution](https://tug.org/mactex/)).
 * Once all desired alterations have been made, the poster can be generated via
     recipes included in the `Makefile`:
     * `make poster` - simply builds the poster based on contents of the TeX file
-    * `make clean` - removes all of the auxiliary files produced over the course
-        of building the poster with pdfTeX and Biber.
+    * `make clean` - removes all auxiliary files produced over the course of
+        building the poster with pdfTeX and Biber.
     * `make all` - this simply invokes __both__ of the above recipes in the
         appropriate order.
 
