@@ -2,9 +2,9 @@
 
 The purpose of this repository is to provide a working template for posters
 (using LaTeX's `baposter` class) that I build for presentations and conferences.
-Rather than starting the process of making posters from scratch (or, worse,
-modifying posters from unrelated, previous presentations), this repository can
-be rather easily used as a foundation to build posters from a nice baseline.
+Rather than going through the process of making posters from scratch (or, worse,
+modifying posters from unrelated, previous presentations), this repo is meant to
+be used as a foundation to easily build posters from a nice baseline.
 
 The original TeX and support files for the poster are [available
 here](http://www.latextemplates.com/template/baposter-landscape-poster).
@@ -32,10 +32,10 @@ distribution](https://tug.org/mactex/)).
 * Once all desired alterations have been made, the poster can be generated via
     recipes included in the `Makefile`:
     * `make poster` - simply builds the poster based on contents of the TeX file
-    * `make clean` - removes all auxiliary files produced over the course of
-        building the poster with pdfTeX and Biber.
+    * `make clean` - removes all auxiliary files produced when building the
+        poster
     * `make all` - this simply invokes __both__ of the above recipes in the
-        appropriate order.
+        appropriate order
 
 ---
 
