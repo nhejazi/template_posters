@@ -1,2 +1,6 @@
-*.{aux,blg,log,tex.bbl,gz}
 *.pdf
+*.aux
+*.blg
+*.log
+*.bbl
+*.gz

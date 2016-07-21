@@ -10,12 +10,13 @@ The original TeX and support files for the poster are [available
 here](http://www.latextemplates.com/template/baposter-landscape-poster).
 
 I had no luck finding a suitable `Makefile` online, but the one included in this
-repo seems to work well with my [MacTeX](https://tug.org/mactex/) distribution.
+repo seems to work well with both my [TeX Live](https://www.tug.org/texlive/)
+and [MacTeX](https://tug.org/mactex/) distributions.
 
 To build the poster, simply `cd` into the poster directory and type `make all`.
 
 __N.B.__, compiling these notes requires working installations of pdfTeX and
-Biber (most easily available for Mac OS X via the [MacTex
+BibTeX (most easily available for macOS via the [MacTex
 distribution](https://tug.org/mactex/)).
 
 ---
@@ -23,9 +24,10 @@ distribution](https://tug.org/mactex/)).
 ## Directions/Roadmap
 
 * Copy the contents of this repository into the directory used for building the
-    new presentation (e.g., `cp -a ...`).
+    new poster. Alternatively, this repository can be cloned into the directory
+    for a project and the `.git` subdirectory then manually removed.
 * Modify the file `conference_poster.tex` to reflect the contents of the new
-    presentation. Once the title of this TeX file has been changed, the `TITLE`
+    presentation. If the title of this TeX file is manually changed, the `TITLE`
     field in the `Makefile` should be altered to reflect this change.
 * Once all desired alterations have been made, the poster can be generated via
     recipes included in the `Makefile`:
