@@ -21,7 +21,7 @@ distribution](https://tug.org/mactex/)).
 
 ---
 
-## Directions/Roadmap
+## Directions
 
 * Copy the contents of this repository into the directory used for building the
     new poster. Alternatively, this repository can be cloned into the directory
@@ -43,4 +43,5 @@ distribution](https://tug.org/mactex/)).
 
 &copy; 2016 [Nima Hejazi](http://nimahejazi.org)
 
-This repository is licensed under the MIT license. See `LICENSE` for details.
+The contents of this repository are distributed under the MIT license. See file
+`LICENSE` for details.

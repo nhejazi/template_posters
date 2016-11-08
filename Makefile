@@ -1,12 +1,19 @@
 TITLE="conference_poster"
 
+.PHONY : all
+all: poster clean web
+
 poster:
-		pdflatex --enable-write18 $(TITLE).tex
-		bibtex $(TITLE)
-		pdflatex $(TITLE).tex
-		pdflatex $(TITLE).tex
+	pdflatex --enable-write18 $(TITLE).tex
+	bibtex $(TITLE)
+	pdflatex $(TITLE).tex
+	pdflatex $(TITLE).tex
 
 clean:
-		rm -f *.{aux,blg,log,bbl,gz}
+	rm -f *.{aux,blg,log,bbl,gz}
 
-all: poster clean
+web: $(TITLE).pdf
+	scp $(TITLE).pdf \
+		nhejazi@arwen.berkeley.edu:/mirror/data/pub/users/nhejazi/posters/$(TITLE).pdf
+	ssh nhejazi@arwen.berkeley.edu \
+		'chmod go+r /mirror/data/pub/users/nhejazi/posters/$(TITLE).pdf'
