@@ -12,7 +12,7 @@ poster:
 clean:
 	rm -f *.{aux,blg,log,bbl,gz}
 
-web: $(TITLE).pdf
+web:
 	scp $(TITLE).pdf \
 		nhejazi@arwen.berkeley.edu:/mirror/data/pub/users/nhejazi/posters/$(TITLE).pdf
 	ssh nhejazi@arwen.berkeley.edu \
