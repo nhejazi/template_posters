@@ -1,7 +1,7 @@
 TITLE="conference_poster"
 
 .PHONY : all
-all: poster clean web
+all: poster clean
 
 poster:
 	pdflatex --enable-write18 $(TITLE).tex
